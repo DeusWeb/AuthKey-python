@@ -27,7 +27,7 @@ banner = (f"""
 
 
 def menu():
-    print(Fore.YELLOW + "> " + "Succesfully login ! thanks you")
+    print(Fore.YELLOW + "> " + Fore.GREEN + "Succesfully login ! thanks you")
 
 def login():
   if version != VERSION:
@@ -39,9 +39,8 @@ def login():
     pwd = getpass.getpass(prompt = Fore.YELLOW + "> " + Fore.BLUE + "Key: ")
     if pwd in passutf: 
        os.system('cls' if os.name == 'nt' else 'clear')
-       print(Fore.GREEN + "Succes key!")
        menu()
     else: 
         os.system('cls' if os.name == 'nt' else 'clear')
-        print(Fore.RED + "Wrong key!")
+        print(Fore.YELLOW + "> " + Fore.RED + "Wrong key!")
 login()
