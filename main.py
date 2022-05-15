@@ -7,14 +7,14 @@ from colorama import Fore, Back, Style
 import getpass 
 
 #modify the link by putting the connection keys
-passwd = urllib.request.urlopen("https://pastebin.com/raw/p5XBSN31")
+passwd = urllib.request.urlopen("pastebin key or password here")
 passutf = passwd.read().decode("utf8")
 passutf = passutf.split("\r\n")
 
 #edit variable VERSION for uptdate
 VERSION = "1.1"
 #edit link version (raw)
-version = requests.get("https://pastebin.com/raw/ScLewjnu").content.decode('utf-8')
+version = requests.get("pastebin url version here").content.decode('utf-8')
 
 banner = (f"""
 | Sample-Login | {VERSION}
