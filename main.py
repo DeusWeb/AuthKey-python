@@ -17,8 +17,9 @@ from discord_webhook import DiscordWebhook, DiscordEmbed
 passwd = urllib.request.urlopen("pastebin password url")
 passutf = passwd.read().decode("utf8")
 passutf = passutf.split("\r\n")
-VERSION = "1.1"
 
+#si tu fais une mise à jour oublie pas de changer le 1.1 dans la variable VERSION et mettre la nouvelle version
+VERSION = "1.1"
 version = requests.get("pastebin version url").content.decode('utf-8')
 
 ip = 'https://api.ipify.org/' 
