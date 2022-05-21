@@ -28,7 +28,7 @@ output = requests.get(ip).text
 titlelogs = "Spotify Bot Logs"
 
 banner = (f"""
-| Sample-Login | v1.2
+| Sample-Login | v{version}
 |══════════════════════════════════════════════
 | By DEUS-WEB#9999
 | Discord : discord.gg/deusweb
